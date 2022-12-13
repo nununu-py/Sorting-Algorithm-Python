@@ -2,10 +2,13 @@
 # selection sort
 
 def selection_sort(list_data: list, order: str):
+    """
+    order value is only "asc" or "desc" 
+    """
 
     if order.lower() == "asc":
 
-        for i in range(len(list_data)-1):
+        for i in range(len(list_data)):
 
             first_num = list_data[i]
 
@@ -19,11 +22,11 @@ def selection_sort(list_data: list, order: str):
 
     elif order.lower() == "desc":
 
-        for i in range(len(list_data)-1):
+        for i in range(len(list_data)):
 
             first_num = list_data[i]
 
-            for j in range(i + 1, len(list_data)):
+            for j in range(i, len(list_data)):
 
                 if first_num < list_data[j]:
 
@@ -39,6 +42,9 @@ def selection_sort(list_data: list, order: str):
 # bubble sort
 
 def bubble_sort(list_data: list, order: str):
+    """
+    order value is only "asc" or "desc" 
+    """
 
     stop_iter = True
 
