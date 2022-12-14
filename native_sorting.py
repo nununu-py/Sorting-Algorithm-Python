@@ -50,7 +50,7 @@ def bubble_sort(list_data: list, order: str):
 
     if order.lower() == "asc":
 
-        for i in range(len(list_data)-1):
+        for i in range(len(list_data)):
 
             for j in range(len(list_data)-1):
 
@@ -67,7 +67,7 @@ def bubble_sort(list_data: list, order: str):
 
     elif order.lower() == "desc":
 
-        for i in range(len(list_data)-1):
+        for i in range(len(list_data)):
 
             for j in range(len(list_data)-1):
 
